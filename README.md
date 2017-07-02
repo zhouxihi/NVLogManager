@@ -43,6 +43,7 @@ typedef enum : NSUInteger {
  @return 单例
  */
 + (instancetype)shareInstance;
+'''
 
 /**
  开启日志文件系统, 默认日志文件保存1个月
