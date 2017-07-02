@@ -29,11 +29,11 @@
 //
 //    [[NVLogManager shareInstance] uploadFileLogWithBlock:^(NSString *logFilePath) {
 //        
-//        NSLog(@"地址: %@", logFilePath);
+//        NSLog(@"地址: %@", logFilePath); // 拿到地址后上传
 //    }];
 //    [[NVLogManager shareInstance] uploadFileLogWithBlock:^(NSString *logFilePath) {
 //        
-//        NSLog(@"地址: %@", logFilePath);
+//        NSLog(@"地址: %@", logFilePath); // 按指定频率上传
 //    } withFrequency:kNVFrequencyDay];
 //    
 //    //[[NVLogManager shareInstance] stopLog];
