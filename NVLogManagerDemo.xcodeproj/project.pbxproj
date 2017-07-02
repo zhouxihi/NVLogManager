@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47CC59C27B33E883E235BD6B /* libPods-NVLogManagerDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DD49A0AD276293194FE061B1 /* libPods-NVLogManagerDemo.a */; };
 		74D9455E1EE274B000417E4F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D9455D1EE274B000417E4F /* main.m */; };
 		74D945611EE274B000417E4F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D945601EE274B000417E4F /* AppDelegate.m */; };
 		74D945641EE274B000417E4F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D945631EE274B000417E4F /* ViewController.m */; };
 		74D945671EE274B000417E4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D945651EE274B000417E4F /* Main.storyboard */; };
 		74D945691EE274B000417E4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74D945681EE274B000417E4F /* Assets.xcassets */; };
 		74D9456C1EE274B000417E4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74D9456A1EE274B000417E4F /* LaunchScreen.storyboard */; };
+		74D945761EE2757E00417E4F /* NVLogManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D945751EE2757E00417E4F /* NVLogManager.m */; };
+		74D945C41EE28A8700417E4F /* MyCustomFormatter.m in Sources */ = {isa = PBXBuildFile; fileRef = 74D945C31EE28A8700417E4F /* MyCustomFormatter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,14 @@
 		74D945681EE274B000417E4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74D9456B1EE274B000417E4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74D9456D1EE274B000417E4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74D945741EE2757E00417E4F /* NVLogManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NVLogManager.h; sourceTree = "<group>"; };
+		74D945751EE2757E00417E4F /* NVLogManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NVLogManager.m; sourceTree = "<group>"; };
+		74D945C21EE28A8700417E4F /* MyCustomFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCustomFormatter.h; sourceTree = "<group>"; };
+		74D945C31EE28A8700417E4F /* MyCustomFormatter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCustomFormatter.m; sourceTree = "<group>"; };
+		74D945C51EE28AEC00417E4F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		C9F5CCE3286CB802E1460FAF /* Pods-NVLogManagerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVLogManagerDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NVLogManagerDemo/Pods-NVLogManagerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		DC511843E847008EB92002EF /* Pods-NVLogManagerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NVLogManagerDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-NVLogManagerDemo/Pods-NVLogManagerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		DD49A0AD276293194FE061B1 /* libPods-NVLogManagerDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-NVLogManagerDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +44,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47CC59C27B33E883E235BD6B /* libPods-NVLogManagerDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		104BBE09DB7500591E3C4B75 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD49A0AD276293194FE061B1 /* libPods-NVLogManagerDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		641E95DD107310A447A0D65B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C9F5CCE3286CB802E1460FAF /* Pods-NVLogManagerDemo.debug.xcconfig */,
+				DC511843E847008EB92002EF /* Pods-NVLogManagerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		74D945501EE274B000417E4F = {
 			isa = PBXGroup;
 			children = (
 				74D9455B1EE274B000417E4F /* NVLogManagerDemo */,
 				74D9455A1EE274B000417E4F /* Products */,
+				641E95DD107310A447A0D65B /* Pods */,
+				104BBE09DB7500591E3C4B75 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,6 +89,7 @@
 		74D9455B1EE274B000417E4F /* NVLogManagerDemo */ = {
 			isa = PBXGroup;
 			children = (
+				74D945731EE274CC00417E4F /* NVLogManager */,
 				74D9455F1EE274B000417E4F /* AppDelegate.h */,
 				74D945601EE274B000417E4F /* AppDelegate.m */,
 				74D945621EE274B000417E4F /* ViewController.h */,
@@ -67,6 +99,7 @@
 				74D9456A1EE274B000417E4F /* LaunchScreen.storyboard */,
 				74D9456D1EE274B000417E4F /* Info.plist */,
 				74D9455C1EE274B000417E4F /* Supporting Files */,
+				74D945C51EE28AEC00417E4F /* PrefixHeader.pch */,
 			);
 			path = NVLogManagerDemo;
 			sourceTree = "<group>";
@@ -79,6 +112,25 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		74D945731EE274CC00417E4F /* NVLogManager */ = {
+			isa = PBXGroup;
+			children = (
+				74D945C11EE28A7C00417E4F /* CustomFormatter */,
+				74D945741EE2757E00417E4F /* NVLogManager.h */,
+				74D945751EE2757E00417E4F /* NVLogManager.m */,
+			);
+			path = NVLogManager;
+			sourceTree = "<group>";
+		};
+		74D945C11EE28A7C00417E4F /* CustomFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				74D945C21EE28A8700417E4F /* MyCustomFormatter.h */,
+				74D945C31EE28A8700417E4F /* MyCustomFormatter.m */,
+			);
+			path = CustomFormatter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -86,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 74D945701EE274B000417E4F /* Build configuration list for PBXNativeTarget "NVLogManagerDemo" */;
 			buildPhases = (
+				6DAB857745016AB2847BFACE /* [CP] Check Pods Manifest.lock */,
 				74D945551EE274B000417E4F /* Sources */,
 				74D945561EE274B000417E4F /* Frameworks */,
 				74D945571EE274B000417E4F /* Resources */,
+				6E77F3E3E02EE15B3AD463C4 /* [CP] Embed Pods Frameworks */,
+				9D90C5D924A51830EAC888DA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +201,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6DAB857745016AB2847BFACE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6E77F3E3E02EE15B3AD463C4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NVLogManagerDemo/Pods-NVLogManagerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D90C5D924A51830EAC888DA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NVLogManagerDemo/Pods-NVLogManagerDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		74D945551EE274B000417E4F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74D945C41EE28A8700417E4F /* MyCustomFormatter.m in Sources */,
 				74D945641EE274B000417E4F /* ViewController.m in Sources */,
 				74D945611EE274B000417E4F /* AppDelegate.m in Sources */,
+				74D945761EE2757E00417E4F /* NVLogManager.m in Sources */,
 				74D9455E1EE274B000417E4F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,9 +374,12 @@
 		};
 		74D945711EE274B000417E4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C9F5CCE3286CB802E1460FAF /* Pods-NVLogManagerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GN473LJ9EX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NVLogManagerDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = NVLogManagerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NOVA.NVLogManagerDemo;
@@ -281,9 +389,12 @@
 		};
 		74D945721EE274B000417E4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC511843E847008EB92002EF /* Pods-NVLogManagerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = GN473LJ9EX;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NVLogManagerDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = NVLogManagerDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = NOVA.NVLogManagerDemo;
@@ -310,6 +421,7 @@
 				74D945721EE274B000417E4F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

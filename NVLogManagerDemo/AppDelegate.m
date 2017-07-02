@@ -17,6 +17,34 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[NVLogManager shareInstance] enableFileLogSystem];
+    
+    NVLogError(@"Error Log")
+    NVlogWarn(@"Warn Log")
+    NVLogDebug(@"Debug Log")
+    NVLogInfo(@"Info Log")
+    
+    NVLogInfo(@"日志文件地址:\n%@", [[NVLogManager shareInstance] getCurrentLogFilePath])
+//
+//    [[NVLogManager shareInstance] uploadFileLogWithBlock:^(NSString *logFilePath) {
+//        
+//        NSLog(@"地址: %@", logFilePath);
+//    }];
+//    [[NVLogManager shareInstance] uploadFileLogWithBlock:^(NSString *logFilePath) {
+//        
+//        NSLog(@"地址: %@", logFilePath);
+//    } withFrequency:kNVFrequencyDay];
+//    
+//    //[[NVLogManager shareInstance] stopLog];
+//    //[[NVLogManager shareInstance] clearFileLog];
+//    
+//    NVLogError(@"Error")
+//    NVlogWarn(@"Warn")
+//    NVLogDebug(@"Debug")
+//    NVLogInfo(@"Info")
+
+    
     return YES;
 }
 
