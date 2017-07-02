@@ -1,18 +1,16 @@
 #基于CocoaLumberjack封装的一个自定义日志系统, 可以实现替换xocode控制台输出, 并实现log分级, 写入文件, 上传后台等功能 
 
-#使用方法:
+##使用方法:
 需要pod 'CocoaLumberjack'
 <pre><code>
 pod 'CocoaLumberjack'
 </pre></code>
 
-并在pch文件中添加一下代码
-'''objective-c
+##并在pch文件中添加一下代码
 #import "NVLogManager.h"
-'''
 
-#目前定义的几种日志级别
-'''objective-c
+##目前定义的几种日志级别
+<pre><code>
 typedef enum : NSUInteger {
     
     kNVLogLevelError = 0,
@@ -21,10 +19,10 @@ typedef enum : NSUInteger {
     kNVLogLevelDebug,
     kNVLogLevelOff
 } NVLogLevel;
-'''
+</pre></code>
 
-#上传频率
-'''objective-c
+##上传频率
+<pre><code>
 typedef enum : NSUInteger {
     
     kNVFrequencyYear = 0,
@@ -33,17 +31,16 @@ typedef enum : NSUInteger {
     kNVFrequencyDay,
 
 } NVLogFrequency;
-'''
+</pre></code>
 
-#基本方法介绍, 具体请参看NVLogManager.h
-'''objective-c
+##基本方法介绍, 具体请参看NVLogManager.h
+<pre><code>
 /**
  获取单例
 
  @return 单例
  */
 + (instancetype)shareInstance;
-'''
 
 /**
  开启日志文件系统, 默认日志文件保存1个月
@@ -94,4 +91,4 @@ typedef enum : NSUInteger {
  */
 - (void)uploadFileLogWithBlock:(UploadFileLogBlock)uploadBlock
                  withFrequency:(NVLogFrequency)uploadFrequency;
-'''
+</pre></code>
