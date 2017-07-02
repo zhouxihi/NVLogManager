@@ -2,9 +2,9 @@
 
 #使用方法:
 需要pod 'CocoaLumberjack'
-''' objective-c
+<pre><code>
 pod 'CocoaLumberjack'
-'''
+</pre></code>
 
 并在pch文件中添加一下代码
 '''objective-c
